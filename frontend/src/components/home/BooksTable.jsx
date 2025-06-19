@@ -5,9 +5,9 @@ import {MdOutlineDelete } from 'react-icons/md';
 
 const BooksTable = ({ books }) => {
   return (
-    <table className='w-full shadow-lg text-gray-300 rounded-2xl' >
+    <table className='w-full list_table rounded-2xl' >
       <thead>
-        <tr className='border border-gray-400 text-gray-500 text-xl'>
+        <tr className='border-amber-800 border-b-2 text-xl text-neutral-200'>
           <th className=' rounded-md'>No</th>
           <th className=' rounded-md'>Title</th>
           <th className=' rounded-md max-md:hidden'>
@@ -21,20 +21,20 @@ const BooksTable = ({ books }) => {
       </thead>
       <tbody>
         {books.map((book, index) => (
-          <tr key={book._id} className='h-8 text-gray-500 border hover:bg-gray-100'>
-            <td className=' rounded-md text-center'>
+          <tr key={book._id} className='h-8 mapped_list border-collapse text-neutral-200'>
+            <td className='text-center'>
               {index + 1}
             </td>
-            <td className=' rounded-md text-center'>
+            <td className='text-center'>
               {book.title}
             </td>
-            <td className=' rounded-md text-center max-md:hidden'>
+            <td className='text-center max-md:hidden'>
               {book.author}
             </td>
-            <td className=' rounded-md text-center max-md:hidden'>
+            <td className='text-center max-md:hidden'>
               {book.publishYear}
             </td>
-            <td className=' rounded-md text-center'>
+            <td className=' text-center'>
               <div className='flex justify-center gap-x-4'>
                 <Link to={`/books/details/${book._id}`}>
                   <BsInfoCircle className='text-2xl text-green-600' />

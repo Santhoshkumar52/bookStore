@@ -4,5 +4,18 @@
 
 body{
     overflow:hidden;
-    background-color: rgb(237, 237, 237);
+    background-image:url(assets/backround_Bookstore.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+.list_table{
+    background-color: rgba(98, 37, 15, 0.626);
+}
+.mapped_list:hover{
+    background-color: rgba(90, 41, 24, 0.648);
+}
+.single_card{
+    background-color: rgba(87, 30, 11, 0.714);
 }

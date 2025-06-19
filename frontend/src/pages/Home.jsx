@@ -31,22 +31,22 @@ const Home = () => {
     <div className='p-4'>
       <div className='flex justify-center items-center gap-x-4'>
         <button
-          className='bg-gray-50 shadow-md hover:bg-sky-600 px-4 py-1 rounded-lg'
+          className='bg-red-700 shadow-md hover:bg-red-800 text-white px-4 py-1 rounded-lg'
           onClick={() => setShowType('table')}
         >
           Table
         </button>
         <button
-          className='bg-gray-50 shadow-md hover:bg-sky-600 px-4 py-1 rounded-lg'
+          className='bg-indigo-800 shadow-md text-white hover:bg-indigo-900 px-4 py-1 rounded-lg'
           onClick={() => setShowType('card')}
         >
           Card
         </button>
       </div>
       <div className='flex justify-between items-center'>
-        <h1 className='text-3xl my-8 font-extrabold'>Mc Book List</h1>
+        <h1 className='text-3xl my-8 font-extrabold text-neutral-200'>Mc Book List</h1>
         <Link to='/books/create'>
-          <MdOutlineAddBox className='text-sky-800 text-4xl' />
+          <MdOutlineAddBox className='text-neutral-100 text-4xl' />
         </Link>
       </div>
       {loading ? (

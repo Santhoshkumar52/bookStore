@@ -28,33 +28,33 @@ const ShowBook = () => {
   return (
     <div className='p-4'>
       <BackButton />
-      <h1 className='text-3xl my-4'>Show Book</h1>
+      <h1 className='text-3xl my-4 font-bold text-gray-300'>Show Book</h1>
       {loading ? (
         <Spinner />
       ) : (
-        <div className='flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4'>
+        <div className='flex flex-col rounded-xl list_table w-fit p-4 text-neutral-300'>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Id</span>
+            <span className='text-xl mr-4 text-gray-300'>Id</span>
             <span>{book._id}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Title</span>
+            <span className='text-xl mr-4 text-gray-300'>Title</span>
             <span>{book.title}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Author</span>
+            <span className='text-xl mr-4 text-gray-300'>Author</span>
             <span>{book.author}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
+            <span className='text-xl mr-4 text-gray-300'>Publish Year</span>
             <span>{book.publishYear}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Create Time</span>
+            <span className='text-xl mr-4 text-gray-300'>Create Time</span>
             <span>{new Date(book.createdAt).toString()}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Last Update Time</span>
+            <span className='text-xl mr-4 text-gray-300'>Last Update Time</span>
             <span>{new Date(book.updatedAt).toString()}</span>
           </div>
         </div>
